@@ -21,7 +21,7 @@ pipeline {
                         sh "gradle clean build"
                         // code
                     }
-                    stage("Paso 2: Sonar - Análisis Estático"){
+                    stage("Paso 2: Sonar -  Análisis Estático"){
                         sh "echo 'Análisis Estático!'"
                         withSonarQubeEnv('sonarqube3') {
                             sh "echo 'Calling sonar by ID!'"
